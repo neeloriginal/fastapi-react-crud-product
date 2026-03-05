@@ -1,0 +1,87 @@
+# =========================
+# Python / FastAPI
+# =========================
+__pycache__/
+*.py[cod]
+*$py.class
+*.pyo
+*.pyd
+
+# Virtual Environment
+venv/
+env/
+ENV/
+.venv/
+
+# Environment variables
+.env
+.env.*
+
+# Python distribution
+build/
+dist/
+*.egg-info/
+.eggs/
+
+# Logs
+*.log
+
+# =========================
+# Node / React
+# =========================
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Production build
+build/
+dist/
+
+# React environment
+frontend/.env
+frontend/.env.local
+frontend/.env.development.local
+frontend/.env.test.local
+frontend/.env.production.local
+
+# =========================
+# IDE / Editor
+# =========================
+.vscode/
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+# =========================
+# OS Files
+# =========================
+.DS_Store
+Thumbs.db
+
+# =========================
+# Testing / Coverage
+# =========================
+.coverage
+htmlcov/
+.pytest_cache/
+
+# =========================
+# Misc
+# =========================
+*.sqlite3
+*.db
+
+# =========================
+# React specific inside frontend
+# =========================
+frontend/node_modules/
+frontend/build/
+
+# =========================
+# Cache files
+# =========================
+.cache/
