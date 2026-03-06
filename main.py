@@ -14,15 +14,34 @@ products = [
     Product(id=5, name="headphones", description="these are headphones", price=5000, quantity=30)
 ]
 
-@app.get("/products")
-def get_all_productx():
+@app.get("/product")
+def get_all_product():
     return products
 
 @app.get("/product/{id}")
-def get_product(id: int):
+def get_product_by_id(id: int):
     for product in products:
         if product.id == id:
             return product
     return {"error": "Product not found"}
 
- 
+@app.post("/product")
+def create_product(product: Product):
+    products.append(product)
+    return product
+
+@app.put("/product/{id}")
+def update_product(id: int, updated_product: Product):
+    for index, product in enumerate(products):
+        if product.id == id:
+            products[index] = updated_product
+            return updated_product
+    return {"error": "Product not found"}
+
+@app.delete("/product/{id}")
+def delete_product(id: int):
+    for index, product in enumerate(products):
+        if product.id == id:
+            products.pop(index)
+            return {"message": "Product deleted"}
+    return {"error": "Product not found"} 
