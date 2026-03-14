@@ -2,13 +2,15 @@
   background: linear-gradient(135deg, rgba(255,255,255,.98), rgba(248,250,252,.96));
   border: 1px solid rgba(255,255,255,.6);
   border-radius: 16px;
-  box-shadow: 0 8px 24px rgba(0,0,0,.08);
+  box-shadow: 0 10px 28px rgba(0,0,0,.10);
   padding: 24px;
   backdrop-filter: blur(8px);
   text-align: center;
   position: relative;
   overflow: hidden;
 }
+
+/* Top accent line */
 
 .tagline-card::before {
   content: '';
@@ -17,24 +19,28 @@
   left: 0;
   right: 0;
   height: 3px;
-  background: linear-gradient(90deg, #667eea, #764ba2, #f59e0b);
+  background: linear-gradient(90deg, #2563eb, #06b6d4, #22c55e);
   border-radius: 16px 16px 0 0;
 }
+
+/* Title */
 
 .tagline-content h3 {
   margin: 0 0 12px;
   font-size: 22px;
   font-weight: 700;
-  background: linear-gradient(135deg, #667eea, #764ba2);
+  background: linear-gradient(135deg, #2563eb, #06b6d4);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
   letter-spacing: 0.5px;
 }
 
+/* Description */
+
 .tagline-content p {
   margin: 0 0 20px;
-  color: #6b7280;
+  color: #64748b;
   font-size: 15px;
   line-height: 1.6;
   max-width: 320px;
@@ -43,35 +49,44 @@
   font-style: italic;
 }
 
+/* Company badge */
+
 .company-badge {
   display: flex;
   align-items: center;
   justify-content: center;
   gap: 8px;
   padding: 12px 20px;
-  background: rgba(249,250,251,.7);
-  border: 1px solid rgba(229,231,235,.5);
+  background: rgba(241,245,249,.8);
+  border: 1px solid rgba(226,232,240,.7);
   border-radius: 12px;
   margin: 0 auto;
   max-width: fit-content;
-  box-shadow: 0 2px 8px rgba(0,0,0,.04);
+  box-shadow: 0 2px 8px rgba(0,0,0,.05);
 }
+
+/* Powered text */
 
 .powered-by {
   font-size: 12px;
-  color: #9ca3af;
+  color: #94a3b8;
   font-weight: 500;
   text-transform: uppercase;
   letter-spacing: 0.5px;
 }
 
+/* Company name */
+
 .company-name {
   font-size: 18px;
   font-weight: 800;
-  background: linear-gradient(135deg, #f59e0b, #d97706);
+  background: linear-gradient(135deg, #2563eb, #06b6d4);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
   letter-spacing: 0.5px;
   text-transform: uppercase;
+}
+.company-badge .company-link {
+  text-decoration: none;
 }

@@ -9,7 +9,8 @@ const TaglineSection = () => {
         <p>Streamline your inventory with smart product management that scales with your business.</p>
         <div className="company-badge">
           <span className="powered-by">Powered by</span>
-          <span className="company-name">Telusko</span>
+          <a href='https://github.com/neeloriginal' target="_blank" rel="noopener noreferrer" className="company-link" >
+          <span className="company-name">NeelOriginal</span> </a>
         </div>
       </div>
     </div>
